@@ -1,7 +1,3 @@
-/*
-This is the main package for `backups`. 
-*/
-
 package base
 
 import (
