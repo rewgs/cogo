@@ -8,6 +8,3 @@ type currentMachine struct {
     Name            string
     SyncMethods     []base.SyncMethod
 }
-
-func main() {
-}
