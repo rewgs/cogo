@@ -1,4 +1,4 @@
-package main
+package cogo
 
 import (
     "github.com/rewgs/cogo/base"
