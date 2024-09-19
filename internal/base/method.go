@@ -24,3 +24,16 @@ type SyncMethodImpl struct {
     Exec        string // Absolute path to the executable
     Options     []string
 }
+
+// TODO:
+func (m *SyncMethodImpl) Install() {}
+
+// TODO:
+func (m *SyncMethodImpl) IsInstall() bool {}
+
+// TODO:
+func (m *SyncMethodImpl) GetExec() string {}
+
+// TODO:
+func (m *SyncMethodImpl) GetOptions() []string {}
+

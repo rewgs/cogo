@@ -1,4 +1,0 @@
-package cogo
-
-import (
-)
