@@ -1,7 +1,7 @@
 package cogo
 
 import (
-    "github.com/rewgs/cogo/base"
+    "github.com/rewgs/cogo/internal/base"
 )
 
 type currentMachine struct {
