@@ -1,19 +1,21 @@
-package base
+package cmd
 
 import (
     "os/exec"
+
+    "github.com/rewgs/cogo/internal/sync/prog"
 )
 
 
-type SyncCmd interface {
+type Cmd interface {
     NewCmd()
     GetOptions() []string // Returns the options for this particular command, i.e. `rsync --archive --verbose` would return a slice `[--archive, --verbose]`
     SetOptions() // 
 }
 
-type SyncCmdImpl struct {
+type CmdImpl struct {
     Name        string
-    Method      SyncMethod
-    Cmd         exec.Cmd
+    Prog        prog.Prog
+    Exec        exec.Cmd
     Options     []string
 }

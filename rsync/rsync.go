@@ -1,10 +1,10 @@
 package rsync
 
 import (
-    "github.com/rewgs/cogo/internal/base"
+    "github.com/rewgs/cogo/internal/sync"
 )
 
 type Rsync struct {
-    base.SyncMethod
+    sync.Prog
 }
 

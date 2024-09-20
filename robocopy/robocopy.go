@@ -1,10 +1,10 @@
 package robocopy
 
 import (
-    "github.com/rewgs/cogo/internal/base"
+    "github.com/rewgs/cogo/internal/sync"
 )
 
 type Robocopy struct {
-    base.SyncMethod
+    sync.Prog
 }
 

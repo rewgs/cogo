@@ -1,10 +1,13 @@
 package rclone
 
 import (
-    "github.com/rewgs/cogo/internal/base"
+    "github.com/rewgs/cogo/internal/sync"
 )
 
 type Rclone struct {
-    base.SyncMethod
+    sync.Prog
 }
 
+func (r *Rclone) Init() {
+    var name string = "rclone"
+}
