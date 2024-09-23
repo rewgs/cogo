@@ -1,3 +1,4 @@
+// TODO: Probably put all this in `internal/base`?
 package cogo
 
 import (
@@ -6,19 +7,6 @@ import (
     "github.com/rewgs/cogo/robocopy"
     "github.com/rewgs/cogo/rsync"
 )
-
-type Cogo struct {
-    InstalledProgs  []sync.Prog
-}
-
-// func Init() *Cogo {
-//     cogo := new(Cogo)
-//
-//     // ...
-//
-//     return cogo
-// }
-
 
 func getInstalledSyncProgs() []sync.Prog {
     installed = []sync.Prog
