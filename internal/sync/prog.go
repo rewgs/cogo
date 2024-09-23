@@ -8,12 +8,18 @@ import (
 )
 
 // Perhaps look through the directories in the root of this repo that aren't `internal` instead?
-type Supported string
-const (
-    Rclone      string = "rclone"
-    Robocopy    string = "robocopy"
-    Rsync       string = "rsync"
-)
+// type Supported string
+// const (
+//     Rclone      string = "rclone"
+//     Robocopy    string = "robocopy"
+//     Rsync       string = "rsync"
+// )
+
+var Supported = [3]string{
+	"rclone",
+	"robocopy",
+	"rsync",
+}
 
 // rclone, robocopy, or rsync
 type Prog interface {
@@ -34,11 +40,11 @@ type ProgImpl struct {
 func (p *ProgImpl) Install() {}
 
 // TODO:
-func (p *ProgImpl) getExec() string {}
+// func (p *ProgImpl) getExec() string {}
 
 // TODO:
-func (p *ProgImpl) getOptions() []string {}
+// func (p *ProgImpl) getOptions() []string {}
 
 // TODO:
 // Searches $PATH for SyncMethodImpl.Name
-func (p *ProgImpl) isInstalled() bool {}
+// func (p *ProgImpl) isInstalled() bool {}
