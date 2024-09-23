@@ -1,10 +1,10 @@
-package cogo
+package main
 
 import (
     // "github.com/rewgs/cogo/internal/sync"
-    // "github.com/rewgs/cogo/rclone"
-    // "github.com/rewgs/cogo/robocopy"
-    // "github.com/rewgs/cogo/rsync"
+    "github.com/rewgs/cogo/rclone"
+    "github.com/rewgs/cogo/robocopy"
+    "github.com/rewgs/cogo/rsync"
 )
 
 // func GetInstalledSyncProgs() []sync.Prog {
@@ -34,8 +34,12 @@ import (
 // 	return true
 // }
 
-// func _test() {
-//     rclone := new(rclone.Rclone)
-//     robocopy := new(robocopy.Robocopy)
-//     rsync := new(rsync.Rsync)
-// }
+func _test() {
+    rclone := new(rclone.Rclone)
+    robocopy := new(robocopy.Robocopy)
+    rsync := new(rsync.Rsync)
+
+	rclone.Init()
+	// robocopy.Init()
+	// rsync.Init()
+}
