@@ -1,5 +1,5 @@
 // TODO: Probably put all this in `internal/base`?
-package cogo
+package base
 
 import (
     "github.com/rewgs/cogo/internal/sync"
