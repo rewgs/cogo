@@ -1,4 +1,4 @@
-package syncer
+package sync
 
 // Syncer defines an application that can sync files (e.g. rclone, robocopy, rsync, etc).
 type Syncer interface {

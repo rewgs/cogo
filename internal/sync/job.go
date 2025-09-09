@@ -1,6 +1,4 @@
-package syncer
-
-import ()
+package sync
 
 type Job struct {
 	Name string
