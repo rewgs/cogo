@@ -1,10 +1,10 @@
 package rsync
 
-import (
-    "github.com/rewgs/cogo/internal/sync"
-)
+// import (
+// 	"github.com/rewgs/cogo/internal/syncer"
+// )
 
 type Rsync struct {
-    sync.Prog
 }
 
+func Install() {}
